@@ -1,5 +1,5 @@
 # Notas
-Esta es una SPA para mostrar heroes de Marvel o DC usando react yarn vite, react-router-dom, query-string
+Esta es una SPA para mostrar heroes de Marvel o DC usando react yarn vite, react-router-dom, query-string, login y logout, protegiendo rutas privadas, recuerda la ultima pagina visitada
 
 No olvidar reconstruir la carpeta node_modules con el comando:
 ```
