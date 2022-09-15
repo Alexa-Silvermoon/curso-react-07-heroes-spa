@@ -23,7 +23,7 @@ export const HeroCard = ({
 }) => {
 
     // const heroImageUrl = `../assets/heroes/${ id }.jpg`;
-    const heroImageUrl = `./assets/heroes/${ id }.jpg`;
+    const heroImageUrl = `./assets/heroes/${id}.jpg`;
 
     // const charactesByHero = <p>{ characters }</p>;
 
@@ -33,7 +33,7 @@ export const HeroCard = ({
             <div className="row no-gutters">
 
                 <div className="col-4">
-                    <img src={ heroImageUrl } className="card-img" alt={ superhero }/>
+                    <img src={heroImageUrl} className="card-img" alt={ superhero }/>
                 </div>
 
                 <div className="col-8">
