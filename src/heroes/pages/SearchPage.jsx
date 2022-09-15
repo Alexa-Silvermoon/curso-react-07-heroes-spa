@@ -48,7 +48,7 @@ export const SearchPage = () => {
                     <h4>Buscar</h4>
                     <hr />
 
-                    <form onSubmit={ onSearchSubmit }>
+                    <form onSubmit={ onSearchSubmit } aria-label="form">
                         <input type="text"
                         placeholder="Busca aqui a tu heroe"
                         className="form-control"
@@ -78,13 +78,19 @@ export const SearchPage = () => {
                         Search a Hero
                     </div> */}
 
-                    <div className="alert alert-primary animate__animated animate__fadeIn" 
-                        style={ { display: showSearch ? '' : 'none' } } >
+                    <div aria-label="div-search-hero" className="alert alert-primary animate__animated animate__fadeIn" 
+                        style={ { display: showSearch ? '' : 'none' } }
+                         // aria-label="div-search-hero" se usara en SearchPage.test.jsx
+
+                        >
                         Search a Hero
                     </div>
 
-                    <div className="alert alert-danger animate__animated animate__fadeIn" 
-                        style={ { display: showError ? '' : 'none' } } >
+                    <div aria-label="div-no-resultados-para" className="alert alert-danger animate__animated animate__fadeIn" 
+                        style={ { display: showError ? '' : 'none' } } 
+                        // aria-label="div-search-hero" se usara en SearchPage.test.jsx
+
+                        >
                         No Hay Resultados para <b>{ q }</b>
                     </div>
 
